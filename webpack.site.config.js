@@ -57,6 +57,14 @@ module.exports = (env, argv) => {
         loader: 'file-loader'
       },
       {
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'asset/source'
+          }
+        ]
+      },
+      {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {

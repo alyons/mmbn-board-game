@@ -1,9 +1,11 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+
+import MuiMarkdown from '../components/MuiMarkdown';
+import introduction from '../assets/data/docs/introduction';
 
 const LandingPage = (props) => {
   return (
-    <Typography variant='h2' align='center'>Megaman Battle Network - Board Game</Typography>
+    <MuiMarkdown>{introduction}</MuiMarkdown>
   );
 };
 
