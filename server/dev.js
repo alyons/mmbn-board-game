@@ -6,7 +6,6 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 
 import createConfig from '../webpack.site.config';
 
-
 const PORT = process.env.PORT || 8091; // eslint-disable-line no-undef
 const NODE_ENV = process.env.NODE_ENV || 'local';
 const webpackConfig = createConfig(NODE_ENV, 'development');
