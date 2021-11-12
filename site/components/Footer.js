@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 const Footer = (props) => {
   return (
-    <Box>
+    <Box sx={{ displayPrint: 'none' }}>
       <Typography>Footer</Typography>
     </Box>
   );
