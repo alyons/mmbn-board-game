@@ -1,7 +1,7 @@
 import megamanTheme from './megaman';
 import originTheme from './origin';
 
-const themes = [
+export const themes = [
   megamanTheme,
   originTheme
 ];

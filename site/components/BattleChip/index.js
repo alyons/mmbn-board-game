@@ -1,8 +1,6 @@
 import React from 'react';
 import {
-  Box,
-  Card,
-  Typography
+  Box
 } from '@mui/material';
 
 import nullImg from '../../assets/images/elements/neutral.svg';
@@ -10,25 +8,6 @@ import naviMark from '../../assets/images/naviMarks/megaManNaviMark.svg';
 import generateRange from './generateRange';
 
 const BattleChip = ({name, type, damage, code, description, image, range, ...props}) => {
-  // return (
-  //   <Card {...props} sx={chipClass}>
-  //     <Box sx={{ margin: 1, height: 'calc(100% - 16px)', width: 'calc(100% - 16px)' }}>
-  //       <Typography variant='h5'>{name}</Typography>
-  //       <Box component='img' src={image} alt={name} sx={{ width: '100%' }} />
-  //       <Box sx={{ display: 'inline-flex', flexDirection: 'row', width: '100%' }}>
-  //         <Typography variant='h5'>{code}</Typography>
-  //         <Box sx={{ flexGrow: 1 }}>
-  //           <Box component='img' src={nullImg} sx={{ height: '100%', marginLeft: 1 }} />
-  //         </Box>
-  //         <Typography variant='h5'>{damage}</Typography>
-  //       </Box>
-  //       <Box>
-  //         <Range variant={range} />
-  //       </Box>
-  //     </Box>
-  //   </Card>
-  // );
-
   return (
     <Box {...props}>
       <svg version='1.1' id='battleChip' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox={`0 0 400 560`} height='100%'>

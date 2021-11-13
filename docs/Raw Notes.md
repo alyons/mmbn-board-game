@@ -52,6 +52,11 @@ What happens when you beat an enemy?
 - Get a reward card (Enemy Skill)
 - Get a boss chip* whoever lands the killing blow gets the boss chip
 
+Where do we want to pull our Battle Chips from?
+- I would venture we should pull the stylings/updates from MMBN6, so that if we add more Navis or Cross Changes and what not, we can be ready to go
+
+
+
 ## Links
 
 - [MMBN Boss Information](https://gamefaqs.gamespot.com/gba/457634-mega-man-battle-network/faqs/16262)
