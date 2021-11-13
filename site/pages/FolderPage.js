@@ -8,15 +8,30 @@ import {
 import BattleChip from '../components/BattleChip';
 import megamanFolder from '../assets/data/battleChips/megaman';
 
+const chipClass = {
+  width: 400,
+  height: 560,
+  '@media print': {
+    width: '63mm',
+    height: '88mm',
+    margin: '5mm 0mm',
+    ':nth-of-type(6n)': {
+      breakAfter: 'always'
+    }
+  },
+  float: 'left'
+};
+
 const FolderPage = (props) => {
   const { id } = useParams();
 
   return (
-    <Grid container>
+    <Box>
       {megamanFolder.map((chip, i) => (
-        <BattleChip {...chip} key={`${i}`} />
+        <BattleChip {...chip} key={`${i}`} sx={chipClass} />
       ))}
-    </Grid>
+      {/* <BattleChip {...megamanFolder[12]} sx={{ width: 400, height: 560 }} /> */}
+    </Box>
   );
 };
 

@@ -31,10 +31,10 @@ const generatePlayerPosition = (variant)  => {
   }
 };
 
-const Range = ({ variant='shot', ...props }) => {
+const generateRange = (variant='shot', xBase=40, yBase=380) => {
 
   const rangeMax = 5;
-  const tileSize = 8;
+  const tileSize = 20;
   const rangeTiles = generateRangeTiles(variant);
   const extraRangeTiles = generateExtraHitTiles(variant);
   const playerPosition = generatePlayerPosition(variant);
@@ -57,7 +57,7 @@ const Range = ({ variant='shot', ...props }) => {
           fill: fillColor,
           stroke: 'black'
         }}
-        d={`M ${x * tileSize} ${y * tileSize} v ${tileSize} h ${tileSize} v -${tileSize} h -${tileSize} Z`}
+        d={`M ${xBase + x * tileSize} ${yBase + y * tileSize} v ${tileSize} h ${tileSize} v -${tileSize} h -${tileSize} Z`}
       />
     );
   };
@@ -68,7 +68,7 @@ const Range = ({ variant='shot', ...props }) => {
   
   const player = ({ x, y }) => {
     return (
-      <circle cx={x * tileSize + (tileSize / 2)} cy={y * tileSize + (tileSize / 2)} fill='blue' r={(tileSize / 2) - 1} />
+      <circle cx={xBase + x * tileSize + (tileSize / 2)} cy={yBase + y * tileSize + (tileSize / 2)} fill='blue' r={(tileSize / 2) - 2} />
     );
   };
   
@@ -83,13 +83,11 @@ const Range = ({ variant='shot', ...props }) => {
   }
 
   return (
-    <svg version='1.1' id='range' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox={`0 0 ${rangeMax * tileSize} ${rangeMax * tileSize}`} height='120px'>
-      <g>
-        {tiles}
-        {player(playerPosition)}
-      </g>
-    </svg>
+    <g>
+      {tiles}
+      {player(playerPosition)}
+    </g>
   );
 };
 
-export default Range;
+export default generateRange;
