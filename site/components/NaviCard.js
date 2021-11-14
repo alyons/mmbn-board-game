@@ -17,7 +17,7 @@ const naviSx = {
   float: 'left'
 };
 
-const NaviCard = ({ name, icon, mark, ...props }) => {
+const NaviCard = ({ name, icon, mark, full, weaknesses, hitPoints, movement, handSize, special, ...props }) => {
 
   const fullProps = {
     ...props,
@@ -47,9 +47,40 @@ const NaviCard = ({ name, icon, mark, ...props }) => {
           <rect x='620' y='20' width='160' height='160' fill='none' style={{ stroke: 'black' }} />
           <image x='624' y='24' width='152' height='152' href={mark} />
 
+          <rect x='20' y='180' width='280' height='360' fill='none' style={{ stroke: 'black' }} />
+          <text x='160' y='210' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>Special</text>
+          <foreignObject x='30' y='230' width='260' height='340'>
+            <p>{special}</p>
+          </foreignObject>
 
-          <rect x='20' y='180' width='280' height='360' fill='yellow' />
-          <rect x='300' y='180' width='480' height='360' fill='red' />
+          {/* <rect x='300' y='180' width='480' height='360' fill='none' style={{ stroke: 'black' }} />270 */}
+          <rect x='300' y='180' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='460' y='180' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='620' y='180' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='300' y='270' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='460' y='270' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='620' y='270' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='300' y='360' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='460' y='360' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='620' y='360' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='300' y='450' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='460' y='450' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+          <rect x='620' y='450' width='160' height='90' fill='none' style={{ stroke: 'black' }} />
+
+          <text x='380' y='225' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>HP</text>
+          <text x='380' y='315' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{hitPoints[0]}</text>
+          <text x='380' y='405' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{hitPoints[1]}</text>
+          <text x='380' y='495' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{hitPoints[2]}</text>
+
+          <text x='540' y='225' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>Move</text>
+          <text x='540' y='315' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{movement[0]}</text>
+          <text x='540' y='405' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{movement[1]}</text>
+          <text x='540' y='495' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{movement[2]}</text>
+
+          <text x='700' y='225' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>Chips</text>
+          <text x='700' y='315' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{handSize[0]}</text>
+          <text x='700' y='405' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{handSize[1]}</text>
+          <text x='700' y='495' dominantBaseline='middle' textAnchor='middle' style={{ font: '36px sans-serif' }}>{handSize[2]}</text>
         </g>
       </svg>
     </Box>
