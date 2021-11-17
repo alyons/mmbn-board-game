@@ -6,6 +6,9 @@ import {
 const naviSx = {
   maxWidth: 800,
   maxHeight: 560,
+  '& p': {
+    fontSize: '24px'
+  },
   '@media print': {
     width: '126mm',
     height: '88mm',
