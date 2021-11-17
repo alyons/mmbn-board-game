@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material';
 import originTheme from '../origin';
 
 const megamanTheme = createTheme(originTheme, {
-  palette: { mode },
+  palette: { mode: 'light' },
   themeName: 'Megaman.exe'
 });
 
