@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 
 import generateRange from '../site/utils/generateRange';
@@ -25,6 +26,11 @@ const Range = ({ isPlayer, range, ...props }) => {
       </svg>
     </Box>
   );
+};
+
+Range.propTypes = {
+  isPlayer: PropTypes.bool,
+  range: PropTypes.string
 };
 
 export default {

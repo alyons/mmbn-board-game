@@ -9,7 +9,7 @@ const providerFn = ({ theme, children }) => {
   return <ThemeProvider theme={muTheme}>{children}</ThemeProvider>
 };
 
-export default decorators = [
+export const decorators = [
   withThemes(null, themes, { providerFn })
 ];
 
