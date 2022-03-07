@@ -55,6 +55,8 @@ What happens when you beat an enemy?
 Where do we want to pull our Battle Chips from?
 - I would venture we should pull the stylings/updates from MMBN6, so that if we add more Navis or Cross Changes and what not, we can be ready to go
 
+Fireman
+
 
 
 ## Links
