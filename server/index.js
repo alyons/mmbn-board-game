@@ -1,20 +1,10 @@
-import express from 'express';
-import path from 'path';
+import http from 'http';
+import webpack from 'webpack';
 
-const PORT = process.env.PORT || 8081;
-const DIST_DIR = __dirname;
-const HTML_FILE = path.join(DIST_DIR, 'index.html');
+import app from './app';
 
-const app = express();
+const PORT = process.env.PORT || 3000;
 
-app.use(express.static(DIST_DIR));
-app.use(express.json());
+const server = http.createServer(app);
 
-app.get('*', (req, res) => {
-    res.sendFile(HTML_FILE);
-});
-
-app.listen(PORT, () => {
-    console.log(`Server is running on port: ${PORT}`); // eslint-disable-line no-undef
-    console.log('Press Ctrl+C to quit.'); // eslint-disable-line no-undef
-});
+server.listen(PORT);
