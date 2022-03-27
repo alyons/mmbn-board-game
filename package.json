@@ -6,6 +6,13 @@
   "scripts": {
     "buildDev": "webpack --mode development --config webpack.site.config.js && webpack --mode development --config webpack.server.config.js",
     "buildProd": "webpack --mode production --config webpack.site.config.js && webpack --mode production --config webpack.server.config.js",
+    "build:dev:client": "webpack --mode development --config webpack.site.config.js",
+    "build:dev:server": "webpack --mode development --config webpack.server.config.js",
+    "build:prod:client": "webpack --mode production --config webpack.site.config.js",
+    "build:prod:server": "webpack --mode production --config webpack.server.config.js",
+    "start:server:dev": "export NODE_ENV=development && node ./dist/server.js",
+    "start:server:prod": "export NODE_ENV=production && node ./dist/server.*.js",
+    "start:iso:dev": "npm run build:dev:client & npm run build:dev:server && npm run start:server:dev",
     "start": "node ./dist/server.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

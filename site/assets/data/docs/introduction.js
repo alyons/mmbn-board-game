@@ -21,6 +21,9 @@ Use powerful Program Advances to really rack up the damage.
 
 ### NetNavis
  - Megaman.exe
+ - Protoman.exe
+ - Roll.exe
+ - Gutsman.exe
 
 ### Viruses
  - Mettaur
