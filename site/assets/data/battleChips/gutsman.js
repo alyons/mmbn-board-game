@@ -1,1 +1,10 @@
-
+import CrakShotImg from '../../images/battleChips/CrakShot.webp';
+import WaveArm1Img from '../../images/battleChips/WaveArm1.webp';
+import RockCubeImg from '../../images/battleChips/RockCube.webp';
+import GeddonImg from '../../images/battleChips/Geddon.webp';
+import FireBrn1Img from '../../images/battleChips/FireBrn1.webp';
+import recover10Img from '../../images/battleChips/recover10.webp';
+import SnakeImg from '../../images/battleChips/Snake.webp';
+import GutPunchImg from '../../images/battleChips/GutPunch.webp';
+import GutPunch2Img from '../../images/battleChips/GutPunch2.webp';
+import JustcOneImg from '../../images/battleChips/JustcOne.webp';
