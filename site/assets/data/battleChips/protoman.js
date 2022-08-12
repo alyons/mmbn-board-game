@@ -1,1 +1,10 @@
-
+import Elecpulse2Img from '../../images/battleChips/ElecPulse2.webp';
+import SwordImg from '../../images/battleChips/Sword.webp';
+import LongSwrdImg from '../../images/battleChips/LongSwrd.webp';
+import WideSwrdImg from '../../images/battleChips/WideSwrd.webp';
+import MuramasaImg from '../../images/battleChips/Muramasa.webp';
+import recover10Img from '../../images/battleChips/recover10.webp';
+import AreaGrabImg from '../../images/battleChips/AreaGrab.webp';
+import AntiSwrdImg from '../../images/battleChips/AntiSwrd.webp';
+import ComingRdImg from '../../images/battleChips/ComingRd.webp';
+import StepSwrdImg from '../../images/battleChips/StepSwrd.webp';
