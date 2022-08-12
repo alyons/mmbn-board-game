@@ -1,4 +1,4 @@
-import Elecpulse2Img from '../../images/battleChips/ElecPulse2.webp';
+import elecPulse2Img from '../../images/battleChips/elecPulse2.webp';
 import SwordImg from '../../images/battleChips/Sword.webp';
 import LongSwrdImg from '../../images/battleChips/LongSwrd.webp';
 import WideSwrdImg from '../../images/battleChips/WideSwrd.webp';
